@@ -1,0 +1,109 @@
+.grid{
+    display: grid;
+    .box{
+        background-color: #bfbf;
+    }
+    .a 
+    {
+    	height: 570px;
+    	width: 569px;
+    	grid-row-start: 1;
+    	grid-row-end: 3;
+    	background-position: -500px 1px;
+    }
+    .b
+    {
+    	width: 248px;
+    	height: 270px;
+    	background-position: 0 1px;
+    	background-size: 100% 100%;
+    	background-repeat: no-repeat;
+    }
+}
+.column-3
+{
+	grid-template-columns: auto auto auto;
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+}
+.card-body, .latest-articles-body{
+    vertical-align: middle;
+    button{
+        width: 81px;
+        height: 20px;
+        background-color: $brand;
+        color: $white;
+        font-size: 10px;
+        border: none;
+    }
+    h4{
+        margin: 10px 0;
+    }
+}
+.left-latest-articles{
+    .row{
+        margin: 20px 0;
+        .latest-articles img{
+            width: 100%;
+        }
+    }
+}
+.latest-articles
+{
+    padding-left: 0 !important;
+    img{
+        width: 100%;
+    }
+}
+.right{
+    .card-body{
+        padding: 0;
+        margin: 10px 0;
+    }
+}
+.right-latest-articles{
+    .row{
+        margin: 20px 0;
+        h6{
+            font-size:20px !important;
+        }
+    }
+}
+.fab-facebook-f{
+    color: $white;
+    background-color: #1877F2;
+}
+
+@media screen and (max-width: 1200px){
+    .column-3
+    {
+        grid-template-columns: auto auto;
+    }
+    .a 
+    {
+    	height: 570px;
+    	width: 569px;
+    	grid-row-start: 1;
+    	grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .column-3
+    {
+        grid-template-columns: auto !important;
+    }
+    .a{
+        width: 268px !important;
+    	height: 270px !important;
+        grid-row-start: 1;
+    	grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        .card-body p{
+            display: none;
+        }
+    }
+}

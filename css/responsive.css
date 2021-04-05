@@ -1,0 +1,17 @@
+@media screen and (max-width: 1000px){
+    .column-3
+    {
+        grid-template-columns: auto;
+    }
+    .a{
+        width: 268px;
+        height: 270px;
+    }
+}
+@media screen and (max-width: 800px){
+    .menu div{
+        display: block !important;
+        width: 100% !important;
+    }
+}
+

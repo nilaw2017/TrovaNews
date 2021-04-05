@@ -1,0 +1,26 @@
+@import "var";
+.top-nav-menu
+{
+    background-color: $brand;
+    a
+    {
+        text-decoration: none;
+        color: $white;
+        img
+        {
+            width: 100px;
+        }
+    }
+}
+.top-menu{
+    padding: 10px 0;
+}
+.menu{
+    div{
+      display: inline-block;
+      margin: 0 1.3%
+    }
+    span{
+        margin: 0 10px;
+    }
+}
